@@ -3176,8 +3176,10 @@ form > div:nth-child(3) > div:nth-child(2) {
   }
 
   .filter-by-in-detail {
-    gap: 5px;
     padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 
   .undeline-viewmore {
@@ -3556,6 +3558,10 @@ form > div:nth-child(3) > div:nth-child(2) {
   .wrap-all-movies {
     padding: 0 24px;
   }
+
+  .date input {
+    margin-left: unset;
+  }
   /*! end view all responsive */
 
   /*! detail responsive */
@@ -3567,8 +3573,9 @@ form > div:nth-child(3) > div:nth-child(2) {
   }
 
   .filter-by-in-detail {
-    padding: 0 100px;
+    padding: 0 52px;
   }
+
   /*! detail responsive */
 
   /*! page profile */
@@ -3685,6 +3692,10 @@ form > div:nth-child(3) > div:nth-child(2) {
   .container-form-movie > div:nth-child(2) > form > div:nth-child(2) {
     flex-direction: column;
     gap: unset;
+  }
+
+  .date input {
+    margin-left: unset;
   }
 }
 
