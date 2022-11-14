@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Manage Movie</title>
+</head>
+
+<body>
+    <nav>
+        <a href="home.html">
+            <img src="./assets/Vector.png" alt="">
+        </a>
+        <div class="link-nav">
+            <ul>
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="manage-movie.html">Manage Movie</a>
+                </li>
+                <li>
+                    <a href="manage-schedule.html">Manage Schedule</a>
+                </li>
+                <li class="profile-link-res">
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li class="input-search-res">
+                    <input type="text" placeholder="Search...">
+                </li>
+                <li>
+                    <a href="sign-in.html">
+                        <div class="btn-logout-res">
+                            Logout
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div>
+                <a href=""><i data-feather="search"></i></a>
+                <img src="/assets/avatar.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-body-admin" style="  background: #f5f6f8;">
+        <div>Form Movie</div>
+        <section class="container-form-movie">
+            <div>
+                <img src="./assets/blackwidow.png" alt="">
+            </div>
+            <div>
+                <form class="form-manage-movie">
+                    <div>
+                        <div class="form-input input-fname">
+                            <label for="movieName" class="label-input-in-admin">Movie Name</label>
+                            <input type="text" id="movieName" name="name" placeholder="Spider-Man: Homecoming">
+                        </div>
+                        <div class="form-input input-lname">
+                            <label for="Category" class="label-input-in-admin">Category</label>
+                            <input type="text id=" Category" name="Category" placeholder="Action, Adventure, Sci-Fi">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-input input-fname">
+                            <label for="director" class="label-input-in-admin">Director</label>
+                            <input type="text" id="director" name="director" placeholder="Jon Watts">
+                        </div>
+                        <div class="form-input input-lname">
+                            <label for="Casts" class="label-input-in-admin">Casts</label>
+                            <input type="text" id="Casts" name="Casts"
+                                placeholder="Tom Holland, Michael Keaton, Robert Dow..">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-input input-fname">
+                            <label for="Release date" class="label-input-in-admin">Release date</label>
+                            <input type="date" id="Release date" name="Release date" placeholder="">
+                        </div>
+                        <div class="form-input input-lname">
+                            <div class="input-for-duration">
+                                <div>
+                                    <label for="durationHour" class="label-input-in-admin">Duration Hour</label>
+                                    <input type="text" id="durationHour" name="durationHour" placeholder="2">
+                                </div>
+                                <div>
+                                    <label for="durationMinute" class="label-input-in-admin">Duration Minute</label>
+                                    <input type="text" id="durationMinute" name="durationMinute" placeholder="2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-synopsis">
+                        <div>Synopsis</div>
+                        <div>
+                            Thrilled by his experience with the Avengers, Peter returns home, where he
+                            lives with his Aunt May, |
+                        </div>
+                    </div>
+                    <div class="container-btn-form">
+                        <button type="submit" class="btn-reset">Reset</button>
+                        <button type="submit" class="btn-submit-in-manage-movie">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+        <section class="wrap-now-showing wrap-view-all">
+            <div class="header-main header-viewall">
+                <div class="title-header-main">
+                    <p class="title-list-movie">Data Movie</p>
+                </div>
+                <div class="filter filter-in-manage-movie">
+                    <select name="" id="" class="drop-sort>
+                        <option value=" volvo">Sort</option>
+                        <option value="saab">Action</option>
+                        <option value="opel">Romance</option>
+                        <option value="audi">Adventure</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <input type="text" placeholder="Search Movie Name ...">
+                </div>
+            </div>
+            <div class="filterBy">
+                <button class="btn-home active-in-home">September</button>
+                <button class="btn-home">Oktober</button>
+                <button class="btn-home">November</button>
+                <button class="btn-home">Desember</button>
+                <button class="btn-home">Januari</button>
+                <button class="btn-home">Februari</button>
+                <button class="btn-home">Maret</button>
+                <button class="btn-home">April</button>
+                <button class="btn-home">Mei</button>
+                <button class="btn-home">Juni</button>
+                <button class="btn-home">Juli</button>
+                <button class="btn-home">Agustus</button>
+            </div>
+        </section>
+        <section class="wrap-all-movies">
+            <div class="all-movies">
+                <div class="card-movies card-in-all-movies">
+                    <img src="./assets/blackwidow.png" alt="">
+                    <h3>Black Widow</h3>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <button>Update</button>
+                    <button class="btn-delete">Delete</button>
+                </div>
+                <div class="card-movies card-in-all-movies">
+                    <img src="./assets/blackwidow.png" alt="">
+                    <h3>Black Widow</h3>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <button>Update</button>
+                    <button class="btn-delete">Delete</button>
+                </div>
+                <div class="card-movies card-in-all-movies">
+                    <img src="./assets/blackwidow.png" alt="">
+                    <h3>Black Widow</h3>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <button>Update</button>
+                    <button class="btn-delete">Delete</button>
+                </div>
+                <div class="card-movies card-in-all-movies">
+                    <img src="./assets/blackwidow.png" alt="">
+                    <h3>Black Widow</h3>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <button>Update</button>
+                    <button class="btn-delete">Delete</button>
+                </div>
+                <div class="card-movies card-in-all-movies">
+                    <img src="./assets/blackwidow.png" alt="">
+                    <h3>Black Widow</h3>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <button>Update</button>
+                    <button class="btn-delete">Delete</button>
+                </div>
+                <div class="card-movies card-in-all-movies">
+                    <img src="./assets/blackwidow.png" alt="">
+                    <h3>Black Widow</h3>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <button>Update</button>
+                    <button class="btn-delete">Delete</button>
+                </div>
+                <div class="card-movies card-in-all-movies">
+                    <img src="./assets/blackwidow.png" alt="">
+                    <h3>Black Widow</h3>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <button>Update</button>
+                    <button class="btn-delete">Delete</button>
+                </div>
+                <div class="card-movies card-in-all-movies">
+                    <img src="./assets/blackwidow.png" alt="">
+                    <h3>Black Widow</h3>
+                    <p>Action, Adventure, Sci-Fi</p>
+                    <button>Update</button>
+                    <button class="btn-delete">Delete</button>
+                </div>
+            </div>
+        </section>
+        <section class="pagination">
+            <div class="item-pagination active-pagination">
+                1
+            </div>
+            <div class="item-pagination">
+                2
+            </div>
+            <div class="item-pagination">
+                3
+            </div>
+            <div class="item-pagination">
+                4
+            </div>
+        </section>
+        <footer>
+            <div class="wrap-footer">
+                <div class="brand-footer">
+                    <img src="/assets/Vector.png" alt="">
+                    <p>Stop waiting in line. Buy tickets</p>
+                    <p>conveniently, watch movies quietly.</p>
+                </div>
+                <div class="explore">
+                    <h3 class="footer-title">Explore</h3>
+                    <a href="home.html">Home</a>
+                    <a href="view-all.html">List Movie</a>
+                </div>
+                <div class="sponsor">
+                    <h3 class="footer-title">
+                        Our Sponsor
+                    </h3>
+                    <img src="/assets/ebu.png" alt="">
+                    <img src="/assets/cine.png" alt="">
+                    <img src="/assets/hiflix.png" alt="">
+                </div>
+                <div class="social-media">
+                    <h3 class="footer-title">
+                        Follow Us
+                    </h3>
+                    <div class="wrap-social">
+                        <div class="group-img-social">
+                            <img src="/assets/fb.png" alt="">
+                            <img src="/assets/ig.png" alt="">
+                            <img src="/assets/twit.png" alt="">
+                            <img src="/assets/yt.png" alt="">
+                        </div>
+                        <div class="group-link-social">
+                            <a href="">Tickitz Cinema id</a>
+                            <a href="">tickitz.id</a>
+                            <a href="">tickitz.id</a>
+                            <a href="">Tickitz Cinema id</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <section class="copyright">
+                <p>© 2020 Tickitz. All Rights Reserved.</p>
+            </section>
+        </footer>
+    </main>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>

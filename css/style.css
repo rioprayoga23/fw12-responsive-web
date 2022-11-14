@@ -1,0 +1,3701 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Mulish&family=Open+Sans&family=Rancho&display=swap");
+
+body,
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+*:focus {
+  outline: none;
+}
+
+select > option:nth-child(1) {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.container-hero {
+  flex: 2;
+}
+
+.imgHero {
+  height: 100%;
+  background-image: url(/assets/image1.png);
+  background-size: cover;
+}
+
+.overlay {
+  background-color: #2b156bcc;
+  height: 100%;
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay:nth-child(1) {
+  opacity: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+.title img {
+  margin-bottom: 9px;
+}
+
+.sub-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.003em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container-form {
+  flex: 1;
+  padding-left: 83px;
+  padding-right: 83px;
+  padding-top: 122px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.text-title-form {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.003em;
+  color: #121212;
+  margin-bottom: 9px;
+}
+
+.container-form .sub-text-title-form {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.007em;
+  color: #aaaaaa;
+  margin-bottom: 38px;
+}
+
+.wrap-form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-input {
+  margin-bottom: 25px;
+}
+
+.group-password {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 24px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+.form-input label {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.form-input label,
+input {
+  display: block;
+}
+
+::placeholder {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: #a0a3bd;
+}
+
+.alert-container {
+  position: relative;
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.alert-container > div:nth-child(1) {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 30px;
+  padding: 10px 0;
+}
+
+.alert-container > div:nth-child(2) {
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  background-color: #5f2eea;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+#success {
+  background-color: #00ba88;
+}
+
+.form-input input {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: #a0a3bd;
+  width: 100%;
+  padding: 22px 24px;
+  background-color: #fcfdfe;
+  border-radius: 16px;
+  border: 1px solid #dedede;
+}
+
+.btn-submit {
+  border: none;
+  border-radius: 16px;
+  padding: 20px 0;
+  width: 100%;
+  background: #5f2eea;
+  border-radius: 16px;
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #f7f7fc;
+  text-align: center;
+}
+
+.btn-for-link {
+  text-decoration: none;
+  color: #f7f7fc;
+}
+
+.optional-account {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #8692a6;
+}
+
+.sign-up {
+  margin-top: 19px;
+  padding-bottom: 52px;
+}
+.sign-in {
+  padding-bottom: 52px;
+}
+
+.container-form-padding {
+  padding-top: 176px;
+}
+
+.overlay-forgot-pass {
+  align-items: unset;
+}
+
+.title-forgot-pass {
+  padding: 30px 60px;
+}
+
+.title-forgot-pass img {
+  width: 190px;
+  height: auto;
+}
+
+.sub-title-forgot-pass {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 60px;
+  letter-spacing: 0.003em;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.text-description-forgot-pass {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.007em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 22px;
+}
+
+.text-title-form-forgot-pass {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0.005em;
+  color: #121212;
+  margin-bottom: 10px;
+}
+
+.btn-send {
+  border-radius: 4px;
+}
+
+.btn-send a {
+  text-decoration: none;
+  color: white;
+}
+
+.ordered-step {
+  display: flex;
+  margin-top: 60px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 100%;
+  color: white;
+}
+
+.active {
+  background-color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.005em;
+  color: rgba(41, 3, 65, 0.5);
+}
+
+.step {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.005em;
+  color: rgba(255, 255, 255, 0.6);
+  align-items: center;
+}
+
+.active-step {
+  color: white;
+}
+
+.line {
+  height: 50px;
+  width: 2px;
+  background-color: white;
+  margin-left: 20px;
+}
+
+.text-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0;
+  margin-left: 42px;
+}
+
+.brand-vector {
+  display: none;
+}
+
+/*! homepage */
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 79px;
+}
+
+.input-search-res input {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 9px;
+  border: 1px solid #dedede;
+  display: none;
+}
+
+.input-search-res input::placeholder {
+  font-size: 12px;
+}
+
+.profile-link-res {
+  display: none;
+}
+
+.btn-logout-res {
+  background-color: #5f2eea;
+  padding: 10px 14px;
+  color: white;
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  color: #f7f7fc;
+  border-radius: 9px;
+  display: none;
+}
+
+.btn-home {
+  padding: 7px 35px;
+  border: 1px solid;
+  border-color: #5f2eea;
+  border-radius: 4px;
+  color: #5f2eea;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+  background-color: white;
+}
+
+nav > a:nth-child(3) {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.active-in-home {
+  background: #5f2eea;
+  color: white;
+}
+
+.link-nav {
+  flex: 2;
+  margin-left: 72px;
+  display: flex;
+  gap: 35px;
+}
+
+.link-nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex: 1;
+  gap: 30px;
+}
+.link-nav > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.link-nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  color: #414141;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 32px 79px;
+}
+
+header section {
+  flex: 1;
+}
+
+.img-header {
+  display: flex;
+  justify-content: center;
+}
+
+.title-first {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #a0a3bd;
+  margin-bottom: 25px;
+}
+.title-header:last-child {
+  font-family: "Mulish";
+  font-weight: bolder;
+  font-size: 55px;
+  line-height: 30px;
+  color: #5f2eea;
+}
+
+.wrap-now-showing {
+  background: #f5f6f8;
+  padding-bottom: 90px;
+  position: relative;
+}
+
+.header-main {
+  display: flex;
+  padding: 32px 79px;
+  align-items: center;
+}
+
+.title-header-main {
+  flex: 1;
+  padding-top: 64px;
+}
+
+.title-header-main {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.title-now-showing {
+  color: #5f2eea;
+}
+
+.title-upcoming {
+  color: #14142b;
+}
+
+.underline {
+  width: 100px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #5f2eea;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.view-all {
+  text-decoration: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.15px;
+  color: #5f2eea;
+  padding-top: 64px;
+}
+
+.detail-hover {
+  display: none;
+}
+
+.card-movies {
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.card-movies:hover .detail-hover {
+  display: block;
+  background-color: white;
+}
+
+.card-movies:hover {
+  background-color: white;
+}
+
+.filterBy {
+  display: flex;
+  gap: 16px;
+  overflow: scroll;
+  overflow-y: hidden;
+  margin-left: 79px;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  margin-bottom: 56px;
+}
+
+.container-list-movie {
+  display: flex;
+  gap: 24px;
+  margin-left: 79px;
+  overflow: scroll;
+  overflow-y: hidden;
+  padding-bottom: 20px;
+  padding-top: 24px;
+}
+
+.container-list-movie .card-movies {
+  border-color: #dedede;
+  text-align: center;
+}
+
+.container-list-movie .card-movies h3 {
+  margin-top: 23px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #14142b;
+  margin-bottom: 8px;
+}
+
+.container-list-movie .card-movies p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #a0a3bd;
+}
+
+.container-list-movie .card-movies a > div:nth-child(1),
+.all-movies .card-movies a > div:nth-child(1) {
+  padding: 8px 0;
+  margin-top: 40px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #5f2eea;
+  border-radius: 8px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #5f2eea;
+}
+.container-list-movie .card-movies a,
+.all-movies .card-movies a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.info {
+  margin-top: 79px;
+  padding: 0 79px;
+}
+
+.card-email {
+  padding: 48px 0;
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(186, 186, 186, 0.3);
+  border-radius: 8px;
+  margin-bottom: 96px;
+}
+
+.card-email h3 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 114%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #4e4b66;
+}
+
+.card-email h1 {
+  margin-top: 20px;
+  font-family: "Mulish";
+  font-weight: bolder;
+  font-size: 55px;
+  line-height: 30px;
+  color: #5f2eea;
+  text-align: center;
+}
+
+.gorup-input-email {
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.gorup-input-email input {
+  padding: 15px 24px;
+  width: 300px;
+  border: 2px solid #dedede;
+  border-radius: 4px;
+}
+
+.card-email button {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.card-email p {
+  margin-top: 40px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #6e7191;
+}
+
+.enter {
+  display: block;
+}
+
+footer {
+  padding-top: 108px;
+  padding-left: 79px;
+  padding-right: 79px;
+  padding-bottom: 20px;
+}
+
+.brand-footer {
+  flex: 2;
+}
+
+.brand-footer p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #6e7191;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.explore a {
+  text-decoration: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #4e4b66;
+  margin-bottom: 14px;
+}
+
+.sponsor {
+  flex: 2;
+}
+
+.sponsor img {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.footer-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.social-media {
+  flex: 1;
+}
+
+.wrap-social {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.group-img-social img {
+  width: 25px;
+  margin: 0 auto;
+}
+
+.group-img-social img:nth-child(1) {
+  width: 15px;
+}
+
+.group-img-social {
+  display: flex;
+  height: 205px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.group-link-social {
+  display: flex;
+  flex-direction: column;
+  height: 195px;
+  justify-content: space-between;
+}
+
+.group-link-social a {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #6e7191;
+
+  text-decoration: none;
+}
+
+.wrap-footer {
+  display: flex;
+}
+
+.copyright {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.copyright p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #4e4b66;
+}
+
+/*! endHomePage */
+
+/*! view all */
+
+.title-list-movie {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+
+.filter {
+  padding-top: 64px;
+}
+.filter select {
+  background: #fcfdfe;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  padding: 12px 20px;
+  /* width: 100%; */
+}
+
+.filter-in-manage-movie select {
+  width: 100%;
+}
+
+.filter select option {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: #4e4b66;
+}
+
+.filter input {
+  margin-left: 12px;
+  background: #fcfdfe;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  width: 313px;
+  padding: 12px 21px;
+}
+
+.filter input::placeholder {
+  font-size: 13px;
+}
+
+.wrap-all-movies {
+  padding: 0 79px;
+  background: #f5f6f8;
+}
+
+.all-movies {
+  padding: 45px 72px;
+  display: flex;
+  background: #ffffff;
+  border-radius: 6px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: space-around;
+}
+
+.wrap-view-all {
+  padding-bottom: 0px;
+}
+.card-in-all-movies {
+  border-color: #dedede;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  padding: 0px 79px;
+  justify-content: center;
+  margin-bottom: 48px;
+  gap: 8px;
+}
+
+.item-pagination {
+  padding: 5px 15px;
+  background-color: white;
+  border: 0.5px solid #dedede;
+  border-radius: 8px;
+  letter-spacing: 0.75px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color: #4e4b66;
+}
+
+.active-pagination {
+  background: #5f2eea;
+  box-shadow: 0px 8px 16px rgba(95, 46, 234, 0.24);
+  border-radius: 8px;
+  color: white;
+}
+
+.main-body-view-all {
+  background: #fcfdfe;
+}
+
+.all-movies .card-movies h3 {
+  margin-top: 23px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #14142b;
+  margin-bottom: 8px;
+}
+
+.all-movies .card-movies p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #a0a3bd;
+}
+
+.all-movies .card-movies button {
+  padding: 8px 0;
+  margin-top: 40px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #5f2eea;
+  border-radius: 8px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #5f2eea;
+}
+
+.all-movies .card-movies button a {
+  text-decoration: none;
+}
+
+/*! end view all */
+
+/*! detail movies */
+.header-detail-movies {
+  padding: 32px 79px;
+  display: flex;
+  gap: 56px;
+}
+
+.card-in-detail {
+  padding: 47px;
+  border: 1px solid #dedede;
+}
+
+.right-description {
+  flex: 2;
+}
+
+.wrap-description {
+  display: flex;
+  gap: 66px;
+}
+
+.right-description h2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  color: #14142b;
+  margin-bottom: 8px;
+}
+
+.right-description p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+  color: #4e4b66;
+  margin-bottom: 32px;
+}
+
+.rilis-description {
+  margin-bottom: 16px;
+}
+
+.rilis-description h5 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  color: #8692a6;
+}
+
+.rilis-description h3 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #121212;
+}
+
+.synopsis {
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.synopsis p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #4e4b66;
+}
+
+.container-ticket {
+  padding: 70px 0;
+  background: #f5f6f8;
+}
+
+.container-ticket h3 {
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  color: #14142b;
+}
+
+.filter-by-in-detail {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 400px;
+}
+
+.filter-by-in-detail > div {
+  flex: 1;
+}
+
+.date,
+.location {
+  padding-top: 40px;
+}
+
+.date input {
+  background: #eff0f6;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.list-location {
+  display: flex;
+  gap: 20px;
+  padding: 72px 79px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.location select {
+  background: #eff0f6;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.card-location {
+  width: 381px;
+
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.card-location-header,
+.card-location-main {
+  padding: 24px;
+}
+
+.wrap-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-brand {
+  flex: 1;
+}
+
+.img-brand img {
+  max-width: 113px;
+  height: auto;
+}
+
+.name-brand {
+  flex: 1;
+}
+
+.name-brand p,
+.time p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.75px;
+  color: #6e7191;
+}
+
+.name-brand h2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #000000;
+}
+
+.time {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.time p {
+  padding-right: 23px;
+  padding-bottom: 16px;
+}
+
+.line-card {
+  width: 100%;
+  height: 1px;
+  background-color: #dedede;
+}
+
+.price {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.price h2 {
+  flex: 1;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #6b6b6b;
+}
+
+.price h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.card-location-main a > div:nth-child(1) {
+  width: 100%;
+  background: #5f2eea;
+  box-shadow: 0px 8px 24px rgba(95, 46, 234, 0.24);
+  border-radius: 4px;
+  border: none;
+  padding: 12px 0;
+  color: white;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-location-main button {
+  width: 100%;
+  background: #5f2eea;
+  box-shadow: 0px 8px 24px rgba(95, 46, 234, 0.24);
+  border-radius: 4px;
+  border: none;
+  padding: 12px 0;
+  color: white;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-location-main a {
+  text-decoration: none;
+  color: white;
+}
+.undeline-viewmore {
+  display: flex;
+  align-items: center;
+  padding: 0 79px;
+}
+
+.undeline-viewmore a {
+  padding: 0 78px;
+  min-width: max-content;
+  text-decoration: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #5f2eea;
+}
+/*! end detail movies */
+
+/*! profile */
+
+.container-profile {
+  padding: 70px 79px;
+  background: #f5f6f8;
+  display: flex;
+  gap: 24px;
+}
+
+.card-profile {
+  background: #ffffff;
+  box-shadow: 0px 8px 32px rgba(186, 186, 186, 0.08);
+  border-radius: 24px;
+  flex: 1;
+  height: 430px;
+}
+
+.title-card-profile h2 {
+  padding: 0 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #4e4b66;
+}
+
+.card-img-profile {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.card-bio-profile {
+  padding: 0 40px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.card-bio-profile h3 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #14142b;
+}
+
+.card-bio-profile p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #4e4b66;
+}
+
+.card-button-logout {
+  text-align: center;
+  padding: 0 40px;
+  padding: 20px 0px;
+}
+
+.card-button-logout button {
+  background: #5f2eea;
+  border-radius: 16px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #f7f7fc;
+  border: none;
+  padding: 12px 55px;
+}
+
+.card-button-logout button a {
+  text-decoration: none;
+  color: white;
+}
+.card-setting {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-setting-profile {
+  background-color: white;
+  border-radius: 16px;
+  padding: 25px 48px;
+  margin-bottom: 20px;
+}
+
+.card-setting-profile {
+  display: flex;
+  gap: 40px;
+}
+
+.card-setting-profile a {
+  text-decoration: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+  color: #aaaaaa;
+}
+
+.card-setting-profile .active-setting {
+  color: #14142b;
+}
+
+.input-for-name,
+.input-contact {
+  gap: 20px;
+  display: flex;
+}
+
+.input-fname,
+.input-lname {
+  flex: 1;
+}
+
+.input-email-setting,
+.input-phone-setting,
+.new-password,
+.confirm-password {
+  flex: 1;
+}
+
+.group-input-phone {
+  display: flex;
+  padding: 23px 0;
+  background: #fcfdfe;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+}
+
+.group-input-phone input {
+  border: none;
+  border-radius: unset;
+  outline: none;
+  padding: unset;
+}
+
+.group-input-phone input:nth-child(1) {
+  width: 60px;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.group-input-phone input:nth-child(2) {
+  padding-left: 20px;
+}
+
+.card-details-information {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px 32px;
+}
+
+.card-details-information h3 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #14142b;
+  margin-bottom: 16px;
+}
+
+.form-setting-profile {
+  margin-top: 49px;
+}
+
+.btn-submit-profile-setting {
+  background: #5f2eea;
+  border-radius: 16px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #f7f7fc;
+  border: none;
+  padding: 12px 75px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*! end profile */
+
+/*! payment */
+.main-payment {
+  display: flex;
+  background-color: #e5e5e5;
+  padding: 56px 79px;
+  gap: 20px;
+}
+
+.section-left-payment {
+  flex: 2;
+}
+
+.section-right-payment {
+  flex: 1;
+}
+
+.section-left-payment h1,
+.section-right-payment h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  color: #14142b;
+}
+
+.container-info-payment {
+  margin-top: 24px;
+}
+
+.container-info-payment {
+  padding: 40px 40px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.row {
+  display: flex;
+  padding: 15px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desc {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  display: flex;
+  align-self: baseline;
+  letter-spacing: 0.25px;
+  color: #6b6b6b;
+}
+
+.desc-detail {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  display: flex;
+  align-self: flex-start;
+  text-align: right;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+
+.total-payment {
+  font-weight: bold;
+}
+
+.row .desc-detail {
+  min-width: max-content;
+}
+.input-info-payment input {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 6px;
+}
+
+.warning {
+  display: flex;
+  gap: 20px;
+  background: rgba(244, 183, 64, 0.3);
+  border-radius: 4px;
+  padding: 22px;
+  align-items: center;
+}
+.warning p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  color: #4e4b66;
+}
+
+.card-payment-choose {
+  margin-top: 48px;
+}
+
+.payment-method {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.icon-payment {
+  cursor: pointer;
+  flex: 1;
+  width: 140px;
+  border: 2px solid #dedede;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  margin-bottom: 32px;
+}
+
+.underline-or {
+  padding: 0;
+}
+.underline-or a {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+}
+
+.pay-cash {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.pay-cash p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /*! identical to box height, or 175% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #6e7191;
+}
+
+.see-how-work {
+  color: #5f2eea;
+  text-decoration: none;
+}
+
+.wrap-btn-pay {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 51px;
+}
+
+.wrap-btn-pay a {
+  text-decoration: none;
+}
+
+.btn-pay {
+  cursor: pointer;
+  width: 260px;
+  background: #5f2eea;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  letter-spacing: 0.75px;
+  color: #f7f7fc;
+  display: flex;
+  justify-content: center;
+  border: none;
+  padding: 12px 0;
+}
+
+.btn-pay a {
+  text-decoration: none;
+  color: #f7f7fc;
+}
+
+.previous-btn {
+  border: 2px solid #5f2eea;
+  background: transparent;
+  color: #5f2eea;
+}
+
+.previous-btn a {
+  color: #5f2eea;
+}
+
+/*! end payment */
+
+/*! order */
+.movie-selected {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+.btn-change a > div {
+  background: #eff0f7;
+  opacity: 0.8;
+  border: 8px solid #eff0f7;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #5f2eea;
+  border-radius: 9px;
+}
+
+.btn-change a {
+  text-decoration: none;
+}
+
+.brand-teater {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.details-movie-selected {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-movie-selected p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.75px;
+  color: #6b6b6b;
+}
+
+.details-movie-selected .selected-value {
+  color: black;
+}
+
+.total-payment {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.line-in-order {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title-total-payment {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.75px;
+  color: #000000;
+}
+
+.total-pay {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.25px;
+  color: #5f2eea;
+}
+
+.header-seat {
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.header-seat > div {
+  width: 100%;
+  height: 5px;
+  background: #d6d8e7;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.container-seat {
+  display: flex;
+  gap: 20px;
+  padding-top: 24px;
+}
+
+.container-seating-key > div:nth-child(1) {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.box-seating-key {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.container-seating-key {
+  margin-top: 32px;
+}
+
+.available {
+  background: #d6d8e7;
+}
+
+.selected {
+  background: #5f2eea;
+}
+
+.sold {
+  background: #6e7191;
+}
+
+.container-seating-key > div:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.container-seating-key > div:nth-child(2) {
+  display: flex;
+  gap: 25px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4b66;
+}
+
+.container-seating-key > div:nth-child(2) > div:nth-child(1),
+.container-seating-key > div:nth-child(2) > div:nth-child(2),
+.container-seating-key > div:nth-child(2) > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.container-choose-seat {
+  background-color: white;
+  padding: 106px 136px;
+  border-radius: 6px;
+  margin-top: 24px;
+}
+
+.header-seat {
+  padding-left: 29px;
+}
+
+.seat-left {
+  display: grid;
+  grid-template-columns: repeat(8, 25px);
+  grid-template-rows: repeat(8, 25px);
+  column-gap: 4px;
+  row-gap: 4px;
+  grid-template-areas:
+    "block1 a1 a2 a3 a4 a5 a6 a7"
+    "block2 b1 b2 b3 b4 b5 b6 b7"
+    "block3 c1 c2 c3 c4 c5 c6 c7"
+    "block4 d1 d2 d3 d4 d5 d6 d7"
+    "block5 e1 e2 e3 e4 e5 e6 e7"
+    "block6 f1 f2 f3 f4 f5 f6 f7"
+    "block7 g1 g2 g3 g4 g5 g6 g7"
+    "nobg num1 num2 num3 num4 num5 num6 num7";
+  flex: 1;
+}
+
+.seat-left div {
+  background: #d6d8e7;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.seat-left .block1 {
+  grid-area: block1;
+  background-color: transparent;
+  align-self: center;
+}
+
+.seat-left .block2 {
+  grid-area: block2;
+  background-color: transparent;
+  align-self: center;
+}
+
+.seat-left .block3 {
+  grid-area: block3;
+  background-color: transparent;
+  align-self: center;
+}
+
+.seat-left .block4 {
+  grid-area: block4;
+  background-color: transparent;
+  align-self: center;
+}
+
+.seat-left .block5 {
+  grid-area: block5;
+  background-color: transparent;
+  align-self: center;
+}
+
+.seat-left .block6 {
+  grid-area: block6;
+  background-color: transparent;
+  align-self: center;
+}
+
+.seat-left .block7 {
+  grid-area: block7;
+  background-color: transparent;
+  align-self: center;
+}
+
+.seat-left .num1 {
+  grid-area: num1;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-left .num2 {
+  grid-area: num2;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-left .num3 {
+  grid-area: num3;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-left .num4 {
+  grid-area: num4;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-left .num5 {
+  grid-area: num5;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-left .num6 {
+  grid-area: num6;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-left .num7 {
+  grid-area: num7;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-left .nobg {
+  grid-area: nobg;
+  background-color: transparent;
+}
+
+.seat-right {
+  display: grid;
+  grid-template-columns: repeat(7, 25px);
+  grid-template-rows: repeat(8, 25px);
+  column-gap: 4px;
+  row-gap: 4px;
+  grid-template-areas:
+    "a1 a2 a3 a4 a5 a6 a7"
+    "b1 b2 b3 b4 b5 b6 b7"
+    "c1 c2 c3 c4 c5 c6 c7"
+    "d1 d2 d3 d4 d5 d6 d7"
+    "e1 e2 e3 e4 e5 e6 e7"
+    "f1 f2 f3 f4 f5 f6 f7"
+    "g1 g2 g3 g4 g5 g6 g7"
+    "num1 num2 num3 num4 num5 num6 num7";
+  justify-self: end;
+}
+
+.seat-right .num1 {
+  grid-area: num1;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-right .num2 {
+  grid-area: num2;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-right .num3 {
+  grid-area: num3;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-right .num4 {
+  grid-area: num4;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-right .num5 {
+  grid-area: num5;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-right .num6 {
+  grid-area: num6;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-right .num7 {
+  grid-area: num7;
+  background-color: transparent;
+  justify-self: center;
+}
+
+.seat-right div {
+  background: #d6d8e7;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/*!! end order */
+
+/*! ! order history */
+
+.container-order-history {
+  background-color: white;
+  border-radius: 24px;
+}
+
+.container-order-history > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  padding: 40px 48px;
+}
+
+.container-order-history > div:nth-child(1) > div:nth-child(1) {
+  flex: 1;
+}
+
+.container-order-history > div:nth-child(1) > div:nth-child(2) img {
+  width: 120px;
+  height: auto;
+}
+
+.container-order-history
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div:nth-child(1) {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  color: #aaaaaa;
+}
+
+.container-order-history
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div:nth-child(2) {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.75px;
+  color: #000000;
+}
+
+.card-profile > hr {
+  border: 1px solid #dedede;
+}
+
+.container-order-history > div:nth-child(3) {
+  display: flex;
+  padding: 32px 48px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-order-history > hr {
+  border: 1px solid #dedede;
+}
+
+.container-order-history > div:nth-child(3) a {
+  text-decoration: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.75px;
+  color: #aaaaaa;
+}
+
+.container-order-history > div:nth-child(3) div {
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #f7f7fc;
+  border: none;
+  padding: 9px 25px;
+  border-radius: 6px;
+  width: 170px;
+}
+
+.btn-ticket-in-active {
+  background: #00ba88;
+}
+
+.btn-ticket-used {
+  background: #6e7191;
+}
+/*! ! end order history */
+
+/* ! Ticket result */
+
+.main-of-ticket-result {
+  padding: 72px 192px;
+  background: #e5e5e5;
+}
+.container-ticket-result {
+  border-radius: 8px;
+  background-color: white;
+}
+
+.container-ticket-result > div:nth-child(1) {
+  text-align: center;
+  padding-top: 56px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  color: #14142b;
+}
+
+section .card-ticket-result {
+  display: flex;
+  padding: 48px 72px;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+.ticket-card {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-ticket {
+  display: flex;
+  align-items: center;
+  height: auto;
+  background: #5f2eea;
+  padding-top: 8px;
+  padding-left: 30px;
+  padding-bottom: 8px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.header-ticket .header-ticket-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-ticket .header-ticket-left {
+  width: 70%;
+}
+
+.header-ticket .header-ticket-left > div:nth-child(1) {
+  flex: 1;
+}
+
+.header-ticket .header-ticket-left > div:nth-child(2) {
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 18px;
+  color: #ffffff;
+  padding-right: 30px;
+}
+
+.header-ticket-right {
+  width: 30%;
+}
+
+.header-ticket-right > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  padding-right: 15px;
+}
+
+.body-ticket {
+  display: flex;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  border-right: 1px solid #dedede;
+  border-left: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.body-ticket .left-body-ticket {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-ticket .left-body-ticket > div {
+  flex: 1;
+}
+
+.body-ticket .left-body-ticket > div:nth-child(2) > div {
+  flex: 1;
+}
+
+.body-ticket .left-body-ticket > div:nth-child(3) > div {
+  flex: 1;
+}
+
+.body-ticket .left-body-ticket > div:nth-child(2) {
+  display: flex;
+}
+
+.body-ticket .left-body-ticket > div:nth-child(3) {
+  display: flex;
+}
+
+.body-ticket .right-body-ticket {
+  width: 30%;
+}
+
+.body-ticket .right-body-ticket {
+  display: flex;
+  justify-content: center;
+}
+
+.title-in-ticket {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #aaaaaa;
+}
+
+.value-in-ticket {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+  color: #14142b;
+}
+
+.border-dashed {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 32%;
+}
+
+.semi-circle-1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  top: -25px;
+  border: 1px solid #dedede;
+}
+
+.semi-circle-2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  bottom: -25px;
+  border: 1px solid #dedede;
+}
+
+.vertical-dashed {
+  position: absolute;
+  height: 100%;
+  border: 1px dashed #dedede;
+  left: 25px;
+}
+
+.box-used-expired {
+  width: 161px;
+  height: 161px;
+  background: #f5f6f8;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 38px;
+  letter-spacing: 0.75px;
+  color: #14142b;
+}
+/* ! End Ticket result*/
+
+/* !manage movie page */
+.main-body-admin > div:nth-child(1) {
+  padding: 0 70px;
+  padding-top: 56px;
+  padding-bottom: 24px;
+}
+
+.main-body-admin > div:nth-child(1) {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+.container-form-movie {
+  display: flex;
+  background-color: white;
+  padding: 50px 70px;
+  margin: 0 70px;
+  border-radius: 8px;
+  gap: 32px;
+  position: relative;
+}
+
+.container-form-movie > div:nth-child(1) {
+  padding: 36px;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  display: block;
+  height: max-content;
+}
+
+.container-form-movie > div:nth-child(2) {
+  flex: 1;
+}
+
+.container-form-movie > div:nth-child(2) > form > div:nth-child(1) {
+  display: flex;
+  gap: 38px;
+}
+.container-form-movie > div:nth-child(2) > form > div:nth-child(2) {
+  display: flex;
+  gap: 38px;
+}
+.container-form-movie > div:nth-child(2) > form > div:nth-child(3) {
+  display: flex;
+  gap: 38px;
+}
+
+.input-flex {
+  display: flex;
+  gap: 38px;
+}
+
+.input-flex > div {
+  flex: 1;
+}
+
+.container-synopsis {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  color: #4e4b66;
+  position: absolute;
+  left: 70px;
+  width: 89%;
+}
+.container-synopsis > div:nth-child(2) {
+  /* width: 89%; */
+  padding: 22px 36px;
+  background: #fcfdfe;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.container-btn-form {
+  display: flex;
+  justify-content: end;
+  padding-top: 130px;
+  gap: 20px;
+}
+.btn-reset,
+.btn-submit-in-manage-movie {
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 16px;
+  padding: 7px 35px;
+}
+
+.btn-send {
+  border-radius: 16px;
+}
+
+.btn-reset {
+  background-color: white;
+  box-shadow: 0px 8px 24px rgba(95, 46, 234, 0.24);
+  border-radius: 4px;
+  border-color: #5f2eea;
+  color: #5f2eea;
+}
+
+.btn-submit-in-manage-movie {
+  background: #5f2eea;
+  box-shadow: 0px 8px 24px rgba(95, 46, 234, 0.24);
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.all-movies .card-movies > .btn-delete {
+  margin-top: 10px;
+  border-color: #ed2e7e;
+  color: #ed2e7e;
+}
+
+.filter-in-form-movie {
+  padding: 0;
+}
+
+.filter-in-form-movie select {
+  padding: 22px 24px;
+  width: 100%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: #a0a3bd;
+}
+
+.schedule-time > div:nth-child(1) {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.input-for-duration {
+  display: flex;
+  gap: 10px;
+}
+#durationHour,
+#durationMinute {
+  padding: 24px 0;
+  text-align: center;
+  flex: 1;
+}
+
+.form-manage-movie label {
+  font-size: 14px;
+}
+
+/* !end manage movie page */
+
+/* !manage schedule */
+
+.input-price,
+.input-filter-date {
+  flex: 1;
+}
+
+.input-filter-date > div:nth-child(1) > div:nth-child(1) {
+  flex: 1;
+}
+
+.input-filter-date > div:nth-child(1) > div:nth-child(2) {
+  flex: 1;
+}
+
+.container-premiere > div:nth-child(1) {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.time > div:nth-child(1) {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.schedule-time > div:nth-child(2) {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.container-premiere > div:nth-child(2) {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.container-premiere > div:nth-child(2) img {
+  width: 100px;
+  height: auto;
+}
+
+.container-premiere > div:nth-child(2) div {
+  flex: 1;
+}
+.selected-premiere {
+  background: #fcfdfe;
+  box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.08);
+  border-radius: 16px;
+  padding: 15px 15px;
+}
+
+form > div:nth-child(3) > div:nth-child(1) {
+  flex: 1;
+}
+
+form > div:nth-child(3) > div:nth-child(2) {
+  flex: 1;
+}
+.schedule-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-time {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btn-add-time {
+  display: flex;
+  align-items: center;
+  padding: 2px 16px;
+  border: 1px solid #5f2eea;
+  border-radius: 6px;
+}
+
+.manage-schedule-btn {
+  padding-top: 70px;
+}
+
+.filter-in-schedule select {
+  margin-left: 7px;
+}
+
+.card-location-main > div:nth-child(3) {
+  display: flex;
+  gap: 10px;
+}
+
+.card-location-main .btn-update-in-schedule {
+  background-color: white;
+  border: 1px solid;
+  color: #5f2eea;
+  border-color: #5f2eea;
+}
+
+.card-location-main .btn-delete-in-schedule {
+  background-color: white;
+  border: 1px solid;
+  color: #ed2e7e;
+  border-color: #ed2e7e;
+}
+
+.card-dashboard > h1 {
+  margin-bottom: 24px;
+}
+/* !end manage schedule */
+
+/* !dashboard */
+.main-dashboard {
+  display: flex;
+  background-color: #e5e5e5;
+  padding: 56px 79px;
+  gap: 20px;
+}
+.container-filtered-in-dashboard {
+  margin-top: 24px;
+  padding: 24px 10px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.filtered-in-container select {
+  width: 100%;
+  background-color: #fcfdfe;
+  padding: 12px 0;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4e4b66;
+  margin-bottom: 24px;
+}
+
+.btn-filter-dashboard {
+  padding: 15px 0;
+  background: #5f2eea;
+  box-shadow: 0px 8px 24px rgba(95, 46, 234, 0.24);
+  border: none;
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 16px;
+  color: #f7f7fc;
+}
+
+.btn-reset-dashboard {
+  padding: 15px 0;
+  background: #5f2eea;
+  box-shadow: 0px 8px 24px rgba(95, 46, 234, 0.24);
+  border-radius: 4px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 16px;
+  color: #5f2eea;
+  background-color: white;
+  border-color: #5f2eea;
+}
+
+.filtered-in-container button {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.container-dashboard > div:nth-child(1) > img {
+  width: 100%;
+  height: auto;
+}
+/* !end dashboard */
+
+/* ! untuk halaman bootstrap */
+.title-fil,
+.title-das {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  color: #000000;
+  margin-bottom: 27px;
+}
+.container-main-bootstrap {
+  background-color: #e5e5e5;
+}
+.footer-list ul {
+  padding: unset;
+}
+
+.footer-list ul li {
+  list-style: none;
+}
+
+.nav-bs {
+  background-color: white;
+}
+
+.navbar-nav .nav-item,
+.nav-link {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #414141;
+}
+
+.dropdown button {
+  background: #fcfdfe;
+  color: #4e4b66;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  border-color: #dedede;
+  padding: 15px 5px;
+}
+
+.dropdown button:hover {
+  background: #fcfdfe;
+  color: #4e4b66;
+}
+
+.btnFilter {
+  background-color: #5f2eea;
+  box-shadow: 0px 8px 24px rgba(95, 46, 234, 0.24);
+  border-radius: 4px;
+  border: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #f7f7fc;
+}
+
+.btnReset {
+  background: #fcfdfe;
+  box-shadow: 0px 8px 24px rgba(95, 46, 234, 0.24);
+  border-radius: 4px;
+  border: 1px solid #5f2eea;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #5f2eea;
+}
+
+.desc-tick {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #6e7191;
+}
+
+.explore,
+.our-sponsor,
+.follow-us {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.footer-list ul li a {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #4e4b66;
+  text-decoration: none;
+}
+
+.dropdown img {
+  cursor: pointer;
+}
+
+.dropdown .dropdown-menu {
+  left: -100px;
+}
+
+.icon-search {
+  cursor: pointer;
+}
+
+.dropdown-search .dropdown-menu {
+  top: -15px;
+  left: -250px;
+  padding: unset;
+}
+
+.dropdown-search > div:nth-child(1) {
+  background-color: white;
+}
+
+.input-search {
+  overflow: hidden;
+}
+
+.input-search > div:nth-child(1) {
+  margin-left: 10px;
+}
+
+.input-search > div:nth-child(1) > input {
+  border: none;
+  padding: 12px 0;
+  padding-left: 15px;
+}
+
+.input-search > div:nth-child(1) > input:focus {
+  outline: none;
+}
+
+/* ! end untuk halaman bootstrap */
+
+@media (max-width: 767px) {
+  .container-hero {
+    display: none;
+  }
+
+  .container-form {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: unset;
+  }
+
+  .container-form-padding {
+    padding-top: 54px;
+  }
+
+  .wrap-form .brand-vector {
+    display: block;
+    margin-bottom: 46px;
+  }
+
+  .text-title-form {
+    font-size: 26px;
+  }
+
+  .form-input input::placeholder {
+    font-size: 13px;
+  }
+
+  .group-password input::placeholder {
+    font-size: 13px;
+  }
+
+  /*! Homepage Resvonsive*/
+  header {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    align-items: unset;
+  }
+
+  nav {
+    padding: 20px 24px;
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .input-search-res input {
+    display: block;
+  }
+
+  .profile-link-res {
+    display: block;
+  }
+
+  .btn-logout-res {
+    display: block;
+  }
+
+  .link-nav {
+    display: flex;
+    align-items: unset;
+    margin-left: 0;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+  }
+
+  .link-nav ul {
+    flex-direction: column;
+    align-items: unset;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .link-nav a {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    margin-right: 8px;
+  }
+
+  .link-nav > div:nth-child(2) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+    display: none;
+  }
+
+  .link-nav > div:nth-child(2) img {
+    width: 30px;
+  }
+
+  nav img {
+    width: 86px;
+  }
+
+  nav .btn-home {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  nav .link-btn-signUp {
+    padding-top: 15px;
+  }
+  .wrap-footer {
+    flex-direction: column;
+  }
+
+  .title-first {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .title-header:last-child {
+    font-size: 30px;
+  }
+
+  .img-header {
+    display: unset;
+  }
+
+  .img-header img {
+    width: 250px;
+  }
+
+  .wrap-img-header-home {
+    margin: 40px auto;
+  }
+
+  .header-main {
+    padding: 23px 24px;
+  }
+
+  .title-header-main,
+  .view-all {
+    padding-top: 20px;
+  }
+
+  .wrap-now-showing {
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  .wrap-upcoming {
+    padding-top: 20px;
+  }
+
+  .title-upcoming {
+    font-size: 20px;
+    color: #5f2eea;
+  }
+
+  .filterBy,
+  .container-list-movie {
+    margin: 15px 24px;
+  }
+
+  .info {
+    padding: 0 24px;
+  }
+
+  .card-email h3 {
+    font-size: 15px;
+  }
+
+  .card-email h1 {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  .gorup-input-email {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .gorup-input-email input {
+    width: 100%;
+  }
+  footer {
+    padding: 24px 24px;
+  }
+
+  .wrap-footer {
+    gap: 20px;
+  }
+  /*! !End Homepage Responsive */
+
+  /*! !view all responsive */
+  .all-movies {
+    padding: 24px 24px;
+  }
+  .header-viewall {
+    align-items: unset;
+    flex-direction: column;
+  }
+
+  .filter {
+    padding-top: 20px;
+  }
+
+  .filter input {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .filterBy {
+    margin: 0 24px;
+  }
+
+  .wrap-all-movies {
+    padding: unset;
+  }
+
+  .card-in-all-movies {
+    padding: 10px 10px;
+    width: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-in-all-movies img {
+    width: 100px;
+  }
+
+  .all-movies .card-movies button {
+    margin-top: 10px;
+  }
+  .all-movies .card-movies a > div:nth-child(1) {
+    margin-top: 16px;
+  }
+
+  .all-movies .card-movies h3 {
+    font-size: 14px;
+  }
+  /*! !end view all responsive */
+
+  /*! !details page responsive */
+  .header-detail-movies {
+    padding: 0 24px;
+    flex-direction: column;
+  }
+
+  .container-ticket {
+    padding: 30px 0;
+  }
+
+  .list-location {
+    padding: 30px 24px;
+  }
+
+  .left-movies {
+    margin-top: 25px;
+  }
+
+  .card-in-detail {
+    text-align: center;
+  }
+
+  .right-description h2,
+  .genre {
+    text-align: center;
+  }
+
+  .wrap-description {
+    gap: 10px;
+  }
+
+  .wrap-description {
+    display: flex;
+  }
+  .column-left {
+    flex: 1;
+  }
+
+  .column-right {
+    flex: 1;
+  }
+
+  .synopsis p {
+    text-align: unset;
+  }
+
+  .filter-by-in-detail {
+    gap: 5px;
+    padding: 0 24px;
+  }
+
+  .undeline-viewmore {
+    padding: 0;
+  }
+  /*! end details page responsive */
+
+  /*! profile page responsive*/
+  .container-profile {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .input-for-name,
+  .input-contact {
+    flex-direction: column;
+    gap: unset;
+  }
+
+  .btn-submit-profile-setting {
+    padding: 12px 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .brand-footer p {
+    text-align: unset;
+  }
+  /*! profile page responsive*/
+
+  /*! payment page responsive*/
+  .main-payment {
+    padding: 40px 24px;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .container-info-payment {
+    padding: 40px 10px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .payment-method {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .icon-payment {
+    flex: unset;
+  }
+  .wrap-btn-pay {
+    margin-top: 20px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap-btn-pay a {
+    width: 100%;
+  }
+
+  .btn-pay {
+    width: 100%;
+  }
+
+  /*! end payment page responsive*/
+
+  /*! order page responsive*/
+  .details-movie-selected .title-movie-selected {
+    display: none;
+    margin: 0 auto;
+  }
+
+  .details-movie-selected .value-movie-selected {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .btn-pay {
+    font-size: 12px;
+  }
+  /*! end order page responsive*/
+
+  /* ! order-history responsive */
+
+  .container-order-history > div:nth-child(1) {
+    flex-direction: column-reverse;
+    padding: 24px 24px;
+  }
+
+  .container-order-history > div:nth-child(1) > div:nth-child(1) {
+    text-align: center;
+  }
+
+  .container-order-history > div:nth-child(3) {
+    padding: 24px 24px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* ! end order-history responsive */
+
+  /* ! ticket result responsive */
+  .main-of-ticket-result {
+    padding: 24px 24px;
+  }
+
+  .barcode .body-in-barcode {
+    border: none;
+    padding: unset;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .body-in-ticket {
+    border: none;
+    padding: unset;
+  }
+
+  .circle-dashed-bottom {
+    display: none;
+  }
+  /* ! end ticket result responsive */
+
+  /* ! choose seat */
+  .container-choose-seat {
+    padding: 24px 24px;
+  }
+  /* ! end choose seat */
+
+  /* ! choose seat responsive */
+  .seat-left {
+    grid-template-columns: repeat(8, 25px);
+    grid-template-rows: repeat(8, 20px);
+  }
+
+  .seat-right {
+    grid-template-columns: repeat(7, 25px);
+    grid-template-rows: repeat(8, 20px);
+  }
+
+  .seat-left div,
+  .seat-right div {
+    font-size: 10px;
+  }
+
+  .header-seat {
+    padding-left: unset;
+  }
+
+  .container-seat {
+    overflow: scroll;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+  }
+
+  .container-seating-key > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+  /* ! end choose seat responsive */
+
+  /* ! ticket resultresponsive */
+  section .card-ticket-result {
+    padding: 24px 24px;
+  }
+
+  .ticket-card .header-ticket {
+    display: none;
+  }
+
+  .body-ticket {
+    flex-direction: column-reverse;
+    border: unset;
+    padding: unset;
+  }
+  .body-ticket .right-body-ticket {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .body-ticket .left-body-ticket {
+    width: 100%;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .body-ticket .left-body-ticket > div:nth-child(2) {
+    gap: 12px;
+  }
+
+  .body-ticket .left-body-ticket > div:nth-child(3) {
+    gap: 12px;
+  }
+  /* ! end ticket result responsive */
+
+  /* ! manage movie */
+  .main-body-admin > div:nth-child(1) {
+    padding: 24px 24px;
+    font-size: 20px;
+  }
+
+  .container-form-movie {
+    margin: 0 24px;
+    padding: 24px 24px;
+    flex-direction: column;
+  }
+
+  .container-form-movie > div:nth-child(1) {
+    align-self: center;
+  }
+
+  .container-form-movie > div:nth-child(2) > form > div:nth-child(1),
+  .container-form-movie > div:nth-child(2) > form > div:nth-child(2),
+  .container-form-movie > div:nth-child(2) > form > div:nth-child(3) {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .input-flex {
+    gap: 5px;
+  }
+
+  .form-input .label-input-in-admin {
+    font-size: 13px;
+  }
+
+  .container-synopsis {
+    position: unset;
+    width: 100%;
+  }
+
+  .container-synopsis > div:nth-child(2) {
+    padding: 10px 24px;
+  }
+  .container-btn-form {
+    padding-top: 24px;
+    justify-content: center;
+  }
+
+  .btn-reset,
+  .btn-submit-in-manage-movie {
+    flex: 1;
+    padding: 5px 26px;
+  }
+
+  .filter-in-form-movie select {
+    font-size: 13px;
+  }
+  /* ! end  manage movie responsive*/
+
+  /* ! manage schedule time responsive*/
+
+  .container-premiere > div:nth-child(2) {
+    text-align: center;
+  }
+
+  .container-premiere > div:nth-child(1) {
+    margin-bottom: 30px;
+  }
+
+  form > div:nth-child(3) > div:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  .schedule-time > div:nth-child(1) {
+    margin-bottom: 10px;
+  }
+
+  .btn-add-time {
+    justify-content: center;
+  }
+
+  .filter-in-schedule {
+    display: flex;
+    overflow: scroll;
+    gap: 10px;
+    padding-bottom: 20px;
+    flex-direction: column;
+  }
+
+  .filter-in-schedule select {
+    margin: 0;
+  }
+
+  .input-for-date-manage {
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* ! end manage schedule time responsive*/
+
+  /* !dashboard responsive */
+  .main-dashboard {
+    flex-direction: column;
+    padding: 24px 24px;
+  }
+
+  /* !end dashboard responsive */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .text-title-form {
+    font-size: 38px;
+  }
+  .container-hero {
+    display: none;
+  }
+
+  .container {
+    display: unset;
+  }
+
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 54px;
+    overflow: unset;
+  }
+  .wrap-form .brand-vector {
+    display: block;
+    margin-bottom: 46px;
+  }
+
+  /*! Homepage Resvonsive*/
+  nav {
+    padding: 20px 24px;
+  }
+
+  .link-nav ul {
+    padding-left: 0;
+    flex: 1;
+  }
+
+  header {
+    padding: 24px 24px;
+  }
+
+  .img-header img {
+    width: 290px;
+  }
+
+  .header-main {
+    padding: 0 24px;
+  }
+
+  .filterBy {
+    margin-top: 20px;
+    margin-left: 24px;
+  }
+
+  .container-list-movie {
+    margin-left: 24px;
+  }
+
+  .info {
+    padding: 0 24px;
+  }
+
+  .wrap-footer {
+    gap: 20px;
+  }
+
+  footer {
+    padding-top: 80px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  /*! End Homepage Responsive */
+
+  /*! view all responsive */
+  .wrap-all-movies {
+    padding: 0 24px;
+  }
+  /*! end view all responsive */
+
+  /*! detail responsive */
+  .card-location {
+    width: 320px;
+  }
+  .list-location {
+    padding: 30px 24px;
+  }
+
+  .filter-by-in-detail {
+    padding: 0 100px;
+  }
+  /*! detail responsive */
+
+  /*! page profile */
+  .card-profile {
+    height: 480px;
+  }
+  .input-for-name,
+  .input-contact {
+    flex-direction: column;
+    gap: unset;
+  }
+
+  .btn-submit-profile-setting {
+    padding: 12px 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  .container-profile {
+    padding: 70px 24px;
+  }
+  /*! end page profile */
+
+  /*! payment responsive */
+  .main-payment {
+    flex-direction: column-reverse;
+    padding: 30px 24px;
+  }
+
+  /*! end payment responsive */
+
+  /* ! ticket result responsive */
+  .main-of-ticket-result {
+    padding: 24px 24px;
+  }
+
+  section .card-ticket-result {
+    padding: 48px 24px;
+  }
+
+  .border-dashed {
+    right: 35%;
+  }
+
+  .header-ticket .header-ticket-left > div:nth-child(2) {
+    padding-right: 60px;
+  }
+
+  .body-ticket .right-body-ticket {
+    padding-right: 14px;
+  }
+  /* ! end ticket result responsive */
+
+  /* ! manage movie responsive */
+  .main-body-admin > div:nth-child(1) {
+    padding: 24px 24px;
+  }
+
+  .container-form-movie {
+    margin: 0 24px;
+    padding: 24px;
+    flex-direction: column;
+  }
+
+  .container-form-movie > div:nth-child(1) {
+    width: max-content;
+    align-self: center;
+  }
+
+  .container-synopsis {
+    position: unset;
+    width: 100%;
+  }
+
+  .container-btn-form {
+    padding-top: 24px;
+  }
+  /* ! end manage movie responsive */
+
+  /* !manage schedule movie responsive*/
+  .container-premiere > div:nth-child(2) div {
+    text-align: center;
+  }
+
+  /* .filter-in-schedule select {
+    width: unset;
+  } */
+  /* ! end manage schedule movie responsive*/
+
+  /* !dashboard */
+  .link-nav {
+    margin-left: 25px;
+  }
+
+  .main-dashboard {
+    padding: 24px 24px;
+  }
+  /* !end dashboard */
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .main-of-ticket-result {
+    padding: 24px 24px;
+  }
+
+  .main-payment {
+    padding: 24px 24px;
+    justify-content: center;
+  }
+
+  .filter-by-in-detail {
+    padding: 0 110px;
+  }
+
+  .container-form-movie > div:nth-child(2) > form > div:nth-child(2) {
+    flex-direction: column;
+    gap: unset;
+  }
+}
+
+@media (min-width: 1600px) {
+  .title img {
+    width: 900px;
+  }
+  .sub-title {
+    font-size: 80px;
+  }
+
+  .main-of-ticket-result {
+    padding: 80px 500px;
+  }
+}

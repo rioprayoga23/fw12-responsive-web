@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Manage Schedule</title>
+</head>
+
+<body>
+    <nav>
+        <a href="home.html">
+            <img src="./assets/Vector.png" alt="">
+        </a>
+        <div class="link-nav">
+            <ul>
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="manage-movie.html">Manage Movie</a>
+                </li>
+                <li>
+                    <a href="manage-schedule.html">Manage Schedule</a>
+                </li>
+                <li class="profile-link-res">
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li class="input-search-res">
+                    <input type="text" placeholder="Search...">
+                </li>
+                <li>
+                    <a href="sign-in.html">
+                        <div class="btn-logout-res">
+                            Logout
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div>
+                <a href=""><i data-feather="search"></i></a>
+                <img src="/assets/avatar.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-body-admin" style="  background: #f5f6f8;">
+        <div>Form Movie</div>
+        <section class="container-form-movie container-in-schedule">
+            <div>
+                <img src="./assets/blackwidow.png" alt="">
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <div class="form-input input-fname">
+                            <label for="movieName" class="label-input-in-admin">Movie</label>
+                            <div class="filter filter-in-form-movie">
+                                <select name="" id="">
+                                    <option value="">Select Movie</option>
+                                    <option value="saab">Spiderman</option>
+                                    <option value="opel">Black Widow</option>
+                                    <option value="audi">Tenet</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-input input-lname">
+                            <label for="Category" class="label-input-in-admin">Location</label>
+                            <div class="filter filter-in-form-movie">
+                                <select name="" id="">
+                                    <option value="">Select Location</option>
+                                    <option value="saab">Bandung</option>
+                                    <option value="opel">Semarang</option>
+                                    <option value="audi">Jakarta</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-input input-price">
+                            <label for="Release date" class="label-input-in-admin">Price</label>
+                            <input type="text" id="Release date" name="Release date" placeholder="10">
+                        </div>
+                        <div class="form-input input-filter-date">
+                            <div class="input-for-duration input-for-date-manage">
+                                <div>
+                                    <label for="durationHour" class="label-input-in-admin">Date Start</label>
+                                    <input type="date" id="durationHour" name="durationHour">
+                                </div>
+                                <div>
+                                    <label for="durationMinute" class="label-input-in-admin">Date End</label>
+                                    <input type="date" id="durationMinute" name="durationMinute" placeholder="2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="container-premiere">
+                            <div>Premiere</div>
+                            <div>
+                                <div><img src="/assets/ebv.id.png" alt=""></div>
+                                <div class="selected-premiere"><img src="/assets/hiflix.png" alt=""></div>
+                                <div><img src="/assets/cine.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="schedule-time">
+                            <div>Time</div>
+                            <div>
+
+                                <div class="list-time">
+                                    <div class="btn-add-time"><i data-feather="plus" style="color:#5F2EEA"></i></div>
+                                    <div>08:30am</div>
+                                    <div>10:30am</div>
+                                    <div>12:00am</div>
+                                    <div>04:30pm</div>
+                                    <div>07:00pm</div>
+                                    <div>08:30pm</div>
+                                    <div>08:30pm</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-btn-form manage-schedule-btn">
+                        <button type="submit" class="btn-reset">Reset</button>
+                        <button type="submit" class="btn-submit-in-manage-movie">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+        <section class="wrap-now-showing wrap-view-all">
+            <div class="header-main header-viewall">
+                <div class="title-header-main">
+                    <p class="title-list-movie">Data Schedule</p>
+                </div>
+                <div class="filter filter-in-schedule">
+                    <select name="" id="">
+                        <option value="volvo">Sort</option>
+                        <option value="saab">Action</option>
+                        <option value="opel">Romance</option>
+                        <option value="audi">Adventure</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="volvo">Location</option>
+                        <option value="saab">Bandung</option>
+                        <option value="opel">Semarang</option>
+                        <option value="audi">Jakarta</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="volvo">Movie</option>
+                        <option value="saab">Action</option>
+                        <option value="opel">Romance</option>
+                        <option value="audi">Adventure</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filterBy">
+                <button class="btn-home active-in-home">September</button>
+                <button class="btn-home">Oktober</button>
+                <button class="btn-home">November</button>
+                <button class="btn-home">Desember</button>
+                <button class="btn-home">Januari</button>
+                <button class="btn-home">Februari</button>
+                <button class="btn-home">Maret</button>
+                <button class="btn-home">April</button>
+                <button class="btn-home">Mei</button>
+                <button class="btn-home">Juni</button>
+                <button class="btn-home">Juli</button>
+                <button class="btn-home">Agustus</button>
+            </div>
+        </section>
+        <section>
+            <div class="list-location">
+                <div class="card-location">
+                    <section class="card-location-header">
+                        <div class="wrap-brand">
+                            <div class="img-brand">
+                                <img src="/assets/ebv.id.png" alt="">
+                            </div>
+                            <div class="name-brand">
+                                <h2>ebv.id</h2>
+                                <p>Whatever street No.12, South Purwokerto</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="line-card"></div>
+                    <section class="card-location-main">
+                        <div class="time">
+                            <p>08:30pm</p>
+                            <p>10:30pm</p>
+                            <p>12:00pm</p>
+                            <p>02:00pm</p>
+                            <p>04:30pm</p>
+                            <p>07:30pm</p>
+                            <p>08:30pm</p>
+                        </div>
+                        <div class="price">
+                            <h2>Price</h2>
+                            <h1>$10.00/seat</h1>
+                        </div>
+                        <div>
+                            <button class="btn-update-in-schedule">Update</button>
+                            <button class="btn-delete-in-schedule">Delete</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="card-location">
+                    <section class="card-location-header">
+                        <div class="wrap-brand">
+                            <div class="img-brand">
+                                <img src="/assets/ebv.id.png" alt="">
+                            </div>
+                            <div class="name-brand">
+                                <h2>ebv.id</h2>
+                                <p>Whatever street No.12, South Purwokerto</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="line-card"></div>
+                    <section class="card-location-main">
+                        <div class="time">
+                            <p>08:30pm</p>
+                            <p>10:30pm</p>
+                            <p>12:00pm</p>
+                            <p>02:00pm</p>
+                            <p>04:30pm</p>
+                            <p>07:30pm</p>
+                            <p>08:30pm</p>
+                        </div>
+                        <div class="price">
+                            <h2>Price</h2>
+                            <h1>$10.00/seat</h1>
+                        </div>
+                        <div>
+                            <button class="btn-update-in-schedule">Update</button>
+                            <button class="btn-delete-in-schedule">Delete</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="card-location">
+                    <section class="card-location-header">
+                        <div class="wrap-brand">
+                            <div class="img-brand">
+                                <img src="/assets/cine.png" alt="">
+                            </div>
+                            <div class="name-brand">
+                                <h2>ebv.id</h2>
+                                <p>Whatever street No.12, South Purwokerto</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="line-card"></div>
+                    <section class="card-location-main">
+                        <div class="time">
+                            <p>08:30pm</p>
+                            <p>10:30pm</p>
+                            <p>12:00pm</p>
+                            <p>02:00pm</p>
+                            <p>04:30pm</p>
+                            <p>07:30pm</p>
+                            <p>08:30pm</p>
+                        </div>
+                        <div class="price">
+                            <h2>Price</h2>
+                            <h1>$10.00/seat</h1>
+                        </div>
+                        <div>
+                            <button class="btn-update-in-schedule">Update</button>
+                            <button class="btn-delete-in-schedule">Delete</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="card-location">
+                    <section class="card-location-header">
+                        <div class="wrap-brand">
+                            <div class="img-brand">
+                                <img src="/assets/ebv.id.png" alt="">
+                            </div>
+                            <div class="name-brand">
+                                <h2>ebv.id</h2>
+                                <p>Whatever street No.12, South Purwokerto</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="line-card"></div>
+                    <section class="card-location-main">
+                        <div class="time">
+                            <p>08:30pm</p>
+                            <p>10:30pm</p>
+                            <p>12:00pm</p>
+                            <p>02:00pm</p>
+                            <p>04:30pm</p>
+                            <p>07:30pm</p>
+                            <p>08:30pm</p>
+                        </div>
+                        <div class="price">
+                            <h2>Price</h2>
+                            <h1>$10.00/seat</h1>
+                        </div>
+                        <div>
+                            <button class="btn-update-in-schedule">Update</button>
+                            <button class="btn-delete-in-schedule">Delete</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="card-location">
+                    <section class="card-location-header">
+                        <div class="wrap-brand">
+                            <div class="img-brand">
+                                <img src="/assets/ebv.id.png" alt="">
+                            </div>
+                            <div class="name-brand">
+                                <h2>ebv.id</h2>
+                                <p>Whatever street No.12, South Purwokerto</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="line-card"></div>
+                    <section class="card-location-main">
+                        <div class="time">
+                            <p>08:30pm</p>
+                            <p>10:30pm</p>
+                            <p>12:00pm</p>
+                            <p>02:00pm</p>
+                            <p>04:30pm</p>
+                            <p>07:30pm</p>
+                            <p>08:30pm</p>
+                        </div>
+                        <div class="price">
+                            <h2>Price</h2>
+                            <h1>$10.00/seat</h1>
+                        </div>
+                        <div>
+                            <button class="btn-update-in-schedule">Update</button>
+                            <button class="btn-delete-in-schedule">Delete</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="card-location">
+                    <section class="card-location-header">
+                        <div class="wrap-brand">
+                            <div class="img-brand">
+                                <img src="/assets/ebv.id.png" alt="">
+                            </div>
+                            <div class="name-brand">
+                                <h2>ebv.id</h2>
+                                <p>Whatever street No.12, South Purwokerto</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="line-card"></div>
+                    <section class="card-location-main">
+                        <div class="time">
+                            <p>08:30pm</p>
+                            <p>10:30pm</p>
+                            <p>12:00pm</p>
+                            <p>02:00pm</p>
+                            <p>04:30pm</p>
+                            <p>07:30pm</p>
+                            <p>08:30pm</p>
+                        </div>
+                        <div class="price">
+                            <h2>Price</h2>
+                            <h1>$10.00/seat</h1>
+                        </div>
+                        <div>
+                            <button class="btn-update-in-schedule">Update</button>
+                            <button class="btn-delete-in-schedule">Delete</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="pagination">
+            <div class="item-pagination active-pagination">
+                1
+            </div>
+            <div class="item-pagination">
+                2
+            </div>
+            <div class="item-pagination">
+                3
+            </div>
+            <div class="item-pagination">
+                4
+            </div>
+        </section>
+        <footer>
+            <div class="wrap-footer">
+                <div class="brand-footer">
+                    <img src="/assets/Vector.png" alt="">
+                    <p>Stop waiting in line. Buy tickets</p>
+                    <p>conveniently, watch movies quietly.</p>
+                </div>
+                <div class="explore">
+                    <h3 class="footer-title">Explore</h3>
+                    <a href="home.html">Home</a>
+                    <a href="view-all.html">List Movie</a>
+                </div>
+                <div class="sponsor">
+                    <h3 class="footer-title">
+                        Our Sponsor
+                    </h3>
+                    <img src="/assets/ebu.png" alt="">
+                    <img src="/assets/cine.png" alt="">
+                    <img src="/assets/hiflix.png" alt="">
+                </div>
+                <div class="social-media">
+                    <h3 class="footer-title">
+                        Follow Us
+                    </h3>
+                    <div class="wrap-social">
+                        <div class="group-img-social">
+                            <img src="/assets/fb.png" alt="">
+                            <img src="/assets/ig.png" alt="">
+                            <img src="/assets/twit.png" alt="">
+                            <img src="/assets/yt.png" alt="">
+                        </div>
+                        <div class="group-link-social">
+                            <a href="">Tickitz Cinema id</a>
+                            <a href="">tickitz.id</a>
+                            <a href="">tickitz.id</a>
+                            <a href="">Tickitz Cinema id</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <section class="copyright">
+                <p>© 2020 Tickitz. All Rights Reserved.</p>
+            </section>
+        </footer>
+    </main>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>
