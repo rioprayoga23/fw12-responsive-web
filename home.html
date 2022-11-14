@@ -192,20 +192,19 @@
         ]
         const containerList = document.getElementById('container-list-movie');
         const containerListUpcoming = document.getElementById('container-list-upcoming');
-
         const movieNowShowing = dataMovie.map((movie) => {
             return `<div class="card-movies" id="card-movies">
                     <img src="${movie.img}" alt="">
-                    <div class="detail-hover">
+                    <div class="detail-hover" id="detail-hover">
                         <h3>${movie.title}</h3>
                         <p>${movie.genre}</p>
-                        <a href="movie-details.html/id=${movie.id}">
+                        <a href="movie-details.html">
                             <div>Details</div>
                         </a>
                     </div>
                 </div>`;
         })
-        containerList.innerHTML = movieNowShowing
+        containerList.innerHTML = movieNowShowing.join(' ')
 
 
         const movieUpcoming = dataMovie.map((movie) => {
@@ -214,15 +213,13 @@
             <img src="${movie.img}" alt="">
                 <h3>${movie.title}</h3>
                 <p>${movie.genre}</p>
-                <a href="movie-details.html/id=${movie.id}">
+                <a href="movie-details.html">
                     <div>Details</div>
                 </a>
         </div>`
         });
 
-        containerListUpcoming.innerHTML = movieUpcoming
-
-
+        containerListUpcoming.innerHTML = movieUpcoming.join(' ')
 
     </script>
 </body>
