@@ -49,67 +49,8 @@
                 </div>
                 <a href="view-all.html" class="view-all">view all</a>
             </div>
-            <div class="container-list-movie">
-                <div class="card-movies" id="card-movies">
-                    <img src="./assets/spidermen.png" alt="">
-                    <div class="detail-hover">
-                        <h3>Spider-Man: Homecoming</h3>
-                        <p>Action, Adventure, Sci-Fi</p>
-                        <a href="movie-details.html">
-                            <div>Details</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-movies" id="card-movies">
-                    <img src="./assets/lionking.png" alt="">
-                    <div class="detail-hover">
-                        <h3>Lion King</h3>
-                        <p>Action, Adventure, Sci-Fi</p>
-                        <a href="movie-details.html">
-                            <div>Details</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-movies" id="card-movies">
-                    <img src="./assets/jhon.png" alt="">
-                    <div class="detail-hover">
-                        <h3>Jhon Wick</h3>
-                        <p>Action, Adventure, Sci-Fi</p>
-                        <a href="movie-details.html">
-                            <div>Details</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-movies" id="card-movies">
-                    <img src="./assets/spidermen.png" alt="">
-                    <div class="detail-hover">
-                        <h3>Spider-Man: Homecoming</h3>
-                        <p>Action, Adventure, Sci-Fi</p>
-                        <a href="movie-details.html">
-                            <div>Details</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-movies" id="card-movies">
-                    <img src="./assets/lionking.png" alt="">
-                    <div class="detail-hover">
-                        <h3>Lion King</h3>
-                        <p>Action, Adventure, Sci-Fi</p>
-                        <a href="movie-details.html">
-                            <div>Details</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-movies" id="card-movies">
-                    <img src="./assets/jhon.png" alt="">
-                    <div class="detail-hover">
-                        <h3>Jhon Wick</h3>
-                        <p>Action, Adventure, Sci-Fi</p>
-                        <a href="movie-details.html">
-                            <div>Details</div>
-                        </a>
-                    </div>
-                </div>
+            <div class="container-list-movie" id="container-list-movie">
+                <!-- For Card Movies -->
             </div>
         </section>
         <section class="wrap-upcoming">
@@ -133,55 +74,8 @@
                 <button class="btn-home">Juli</button>
                 <button class="btn-home">Agustus</button>
             </div>
-            <div class="container-list-movie">
-                <div class="card-movies">
-                    <img src="./assets/blackwidow.png" alt="">
-                    <h3>Black Widow</h3>
-                    <p>Action, Adventure, Sci-Fi</p>
-                    <a href="movie-details.html">
-                        <div>Details</div>
-                    </a>
-                </div>
-                <div class="card-movies">
-                    <img src="./assets/witcher.png" alt="">
-                    <h3>The Witches</h3>
-                    <p>Action, Adventure, Sci-Fi</p>
-                    <a href="movie-details.html">
-                        <div>Details</div>
-                    </a>
-                </div>
-                <div class="card-movies">
-                    <img src="./assets/tenet.png" alt="">
-                    <h3>Tenet</h3>
-                    <p>Action, Adventure, Sci-Fi</p>
-                    <a href="movie-details.html">
-                        <div>Details</div>
-                    </a>
-                </div>
-                <div class="card-movies">
-                    <img src="./assets/blackwidow.png" alt="">
-                    <h3>Black Widow</h3>
-                    <p>Action, Adventure, Sci-Fi</p>
-                    <a href="movie-details.html">
-                        <div>Details</div>
-                    </a>
-                </div>
-                <div class="card-movies">
-                    <img src="./assets/witcher.png" alt="">
-                    <h3>The Witches</h3>
-                    <p>Action, Adventure, Sci-Fi</p>
-                    <a href="movie-details.html">
-                        <div>Details</div>
-                    </a>
-                </div>
-                <div class="card-movies">
-                    <img src="./assets/tenet.png" alt="">
-                    <h3>Tenet</h3>
-                    <p>Action, Adventure, Sci-Fi</p>
-                    <a href="movie-details.html">
-                        <div>Details</div>
-                    </a>
-                </div>
+            <div class="container-list-movie" id="container-list-upcoming">
+
             </div>
         </section>
         <section class="info">
@@ -244,7 +138,93 @@
         </div>
     </footer>
 
+    <script>
+        const dataMovie = [
+            {
+                id: 1,
+                title: 'Spider-Man: Homecoming',
+                genre: 'Action, Adventure, Sci-Fi',
+                img: './assets/spidermen.png'
+            },
+            {
+                id: 2,
+                title: 'Witcher',
+                genre: 'Action, Adventure, Sci-Fi',
+                img: './assets/witcher.png'
+            },
+            {
+                id: 3,
+                title: 'Lion King',
+                genre: 'Action, Adventure, Sci-Fi',
+                img: './assets/lionking.png'
+            },
+            {
+                id: 4,
+                title: 'Jhon Wick',
+                genre: 'Action, Adventure, Sci-Fi',
+                img: './assets/jhon.png'
+            },
+            {
+                id: 5,
+                title: 'Spider-Man: Homecoming',
+                genre: 'Action, Adventure, Sci-Fi',
+                img: './assets/spidermen.png'
+            },
+            {
+                id: 6,
+                title: 'Witcher',
+                genre: 'Action, Adventure, Sci-Fi',
+                img: './assets/witcher.png'
+            },
+            {
+                id: 7,
+                title: 'Lion King',
+                genre: 'Action, Adventure, Sci-Fi',
+                img: './assets/lionking.png'
+            },
+            {
+                id: 8,
+                title: 'Jhon Wick',
+                genre: 'Action, Adventure, Sci-Fi',
+                img: './assets/jhon.png'
+            }
 
+        ]
+        const containerList = document.getElementById('container-list-movie');
+        const containerListUpcoming = document.getElementById('container-list-upcoming');
+
+        const movieNowShowing = dataMovie.map((movie) => {
+            return `<div class="card-movies" id="card-movies">
+                    <img src="${movie.img}" alt="">
+                    <div class="detail-hover">
+                        <h3>${movie.title}</h3>
+                        <p>${movie.genre}</p>
+                        <a href="movie-details.html/id=${movie.id}">
+                            <div>Details</div>
+                        </a>
+                    </div>
+                </div>`;
+        })
+        containerList.innerHTML = movieNowShowing
+
+
+        const movieUpcoming = dataMovie.map((movie) => {
+            return `
+        <div class="card-movies">
+            <img src="${movie.img}" alt="">
+                <h3>${movie.title}</h3>
+                <p>${movie.genre}</p>
+                <a href="movie-details.html/id=${movie.id}">
+                    <div>Details</div>
+                </a>
+        </div>`
+        });
+
+        containerListUpcoming.innerHTML = movieUpcoming
+
+
+
+    </script>
 </body>
 
 </html>

@@ -605,6 +605,7 @@ header section {
   letter-spacing: 0.15px;
   color: #14142b;
   margin-bottom: 8px;
+  min-height: 50px;
 }
 
 .container-list-movie .card-movies p {
@@ -621,7 +622,7 @@ header section {
 .container-list-movie .card-movies a > div:nth-child(1),
 .all-movies .card-movies a > div:nth-child(1) {
   padding: 8px 0;
-  margin-top: 40px;
+  margin-top: 20px;
   width: 100%;
   background: #ffffff;
   border: 1px solid #5f2eea;
