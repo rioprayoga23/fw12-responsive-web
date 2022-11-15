@@ -28,7 +28,6 @@ button {
 
 select {
   -webkit-appearance: none;
-  background: url() no-repeat right white;
 }
 
 .container-hero {
@@ -874,6 +873,13 @@ footer {
   display: flex;
 }
 
+.icon-date {
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 18px;
+}
+
 .icon-arrow {
   position: absolute;
   right: 0;
@@ -1135,6 +1141,11 @@ footer {
 
 .filter-by-in-detail > div {
   flex: 1;
+}
+
+.date > input::-webkit-calendar-picker-indicator {
+  background: url(/assets/chevron-down.svg);
+  padding-right: 6px;
 }
 
 .date,
