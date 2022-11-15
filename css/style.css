@@ -585,6 +585,10 @@ header section {
   margin-bottom: 56px;
 }
 
+.filterBy::-webkit-scrollbar {
+  display: none;
+}
+
 .container-list-movie {
   display: flex;
   gap: 24px;
