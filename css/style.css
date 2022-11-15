@@ -934,6 +934,7 @@ footer {
 
 .wrap-view-all {
   padding-bottom: 0px;
+  height: auto;
 }
 .card-in-all-movies {
   border-color: #dedede;
