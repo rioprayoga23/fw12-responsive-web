@@ -67,57 +67,7 @@
         feather.replace()
     </script>
 
-    <script>
-        const formLogin = document.getElementById('form-login');
-        const alertInvalid = document.getElementById('invalid');
-        const alertSuccess = document.getElementById('success');
-        const btnClose = document.getElementById('btn-close-alert');
-        const btnEye = document.getElementById('btn-eye');
-        const inputPass = document.getElementById('password');
-        const wrapGPass = document.getElementById('wrap-gPassword');
-
-        formLogin.addEventListener('submit', (event) => {
-            event.preventDefault();
-            const email = event.target.email.value;
-            const password = event.target.password.value;
-
-            if (email === 'admin@gmail.com' && password === 'admin123') {
-                alertSuccess.style.display = 'block'
-                setTimeout(() => {
-                    window.location.replace("/home.html");
-                }, 2000)
-            } else {
-                alertInvalid.style.display = 'block'
-                setTimeout(() => {
-                    alertInvalid.style.display = 'none'
-
-                }, 5000)
-            }
-        })
-        btnClose.addEventListener('click', () => {
-            alertInvalid.style.display = 'none'
-        })
-
-        btnEye.addEventListener('click', (event) => {
-            if (inputPass.getAttribute('type') == 'password') {
-
-                inputPass.setAttribute('type', 'text');
-
-                const newIcon = feather.icons['eye'].toSvg();
-                wrapGPass.children[1].innerHTML = newIcon;
-
-            } else {
-                inputPass.setAttribute('type', 'password');
-
-                const newIcon = feather.icons['eye-off'].toSvg();
-                wrapGPass.children[1].innerHTML = newIcon;
-
-            }
-            // console.log(inputPass.getAttribute('type'));
-        })
-
-
-    </script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
