@@ -43,76 +43,77 @@ if (window.location.pathname === "/sign-in.html") {
     // console.log(inputPass.getAttribute('type'));
   });
 } else {
-       const dataMovie = [
-         {
-           id: 1,
-           title: "Spider-Man: Homecoming",
-           genre: "Action, Adventure, Sci-Fi",
-           img: "./assets/spidermen.png",
-         },
-         {
-           id: 2,
-           title: "Witcher",
-           genre: "Action, Adventure, Sci-Fi",
-           img: "./assets/witcher.png",
-         },
-         {
-           id: 3,
-           title: "Lion King",
-           genre: "Action, Adventure, Sci-Fi",
-           img: "./assets/lionking.png",
-         },
-         {
-           id: 4,
-           title: "Jhon Wick",
-           genre: "Action, Adventure, Sci-Fi",
-           img: "./assets/jhon.png",
-         },
-         {
-           id: 5,
-           title: "Spider-Man: Homecoming",
-           genre: "Action, Adventure, Sci-Fi",
-           img: "./assets/spidermen.png",
-         },
-         {
-           id: 6,
-           title: "Witcher",
-           genre: "Action, Adventure, Sci-Fi",
-           img: "./assets/witcher.png",
-         },
-         {
-           id: 7,
-           title: "Lion King",
-           genre: "Action, Adventure, Sci-Fi",
-           img: "./assets/lionking.png",
-         },
-         {
-           id: 8,
-           title: "Jhon Wick",
-           genre: "Action, Adventure, Sci-Fi",
-           img: "./assets/jhon.png",
-         },
-       ];
-       const containerList = document.getElementById("container-list-movie");
-       const containerListUpcoming = document.getElementById(
-         "container-list-upcoming"
-       );
-       const movieNowShowing = dataMovie.map((movie) => {
-         return `<div class="card-movies" id="card-movies">
-                    <img src="${movie.img}" alt="">
+  const dataMovie = [
+    {
+      id: 1,
+      title: "Spider-Man: Homecoming",
+      genre: ["Action", "Adventure", "Sci - Fi"],
+      img: "./assets/spidermen.png",
+    },
+    {
+      id: 2,
+      title: "Witcher",
+      genre: ["Action", "Adventure", "Sci - Fi"],
+      img: "./assets/witcher.png",
+    },
+    {
+      id: 3,
+      title: "Lion King",
+      genre: ["Action", "Adventure", "Sci - Fi"],
+      img: "./assets/lionking.png",
+    },
+    {
+      id: 4,
+      title: "Jhon Wick",
+      genre: ["Action", "Adventure", "Sci - Fi"],
+      img: "./assets/jhon.png",
+    },
+    {
+      id: 5,
+      title: "Spider-Man: Homecoming",
+      genre: ["Action", "Adventure", "Sci - Fi"],
+      img: "./assets/spidermen.png",
+    },
+    {
+      id: 6,
+      title: "Witcher",
+      genre: ["Action", "Adventure", "Sci - Fi"],
+      img: "./assets/witcher.png",
+    },
+    {
+      id: 7,
+      title: "Lion King",
+      genre: ["Action", "Adventure", "Sci - Fi"],
+      img: "./assets/lionking.png",
+    },
+    {
+      id: 8,
+      title: "Jhon Wick",
+      genre: ["Action", "Adventure", "Sci - Fi"],
+      img: "./assets/jhon.png",
+    },
+  ];
+  const containerList = document.getElementById("container-list-movie");
+  const containerListUpcoming = document.getElementById(
+    "container-list-upcoming"
+  );
+  const movieNowShowing = dataMovie.map((movie) => {
+    const { title, genre, img } = movie;
+    return `<div class="card-movies" id="card-movies">
+                    <img src="${img}" alt="">
                     <div class="detail-hover" id="detail-hover">
-                        <h3>${movie.title}</h3>
-                        <p>${movie.genre}</p>
+                        <h3>${title}</h3>
+                        <p>${genre.join(", ")}</p>
                         <a href="movie-details.html">
                             <div>Details</div>
                         </a>
                     </div>
                 </div>`;
-       });
-       containerList.innerHTML = movieNowShowing.join(" ");
+  });
+  containerList.innerHTML = movieNowShowing.join(" ");
 
-       const movieUpcoming = dataMovie.map((movie) => {
-         return `
+  const movieUpcoming = dataMovie.map((movie) => {
+    return `
         <div class="card-movies">
             <img src="${movie.img}" alt="">
                 <h3>${movie.title}</h3>
@@ -121,8 +122,7 @@ if (window.location.pathname === "/sign-in.html") {
                     <div>Details</div>
                 </a>
         </div>`;
-       });
+  });
 
-       containerListUpcoming.innerHTML = movieUpcoming.join(" ");
-
+  containerListUpcoming.innerHTML = movieUpcoming.join(" ");
 }
