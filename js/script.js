@@ -113,11 +113,13 @@ if (window.location.pathname === "/sign-in.html") {
   containerList.innerHTML = movieNowShowing.join(" ");
 
   const movieUpcoming = dataMovie.map((movie) => {
+    const { title, genre, img } = movie;
+
     return `
         <div class="card-movies">
-            <img src="${movie.img}" alt="">
-                <h3>${movie.title}</h3>
-                <p>${movie.genre}</p>
+            <img src="${img}" alt="">
+                <h3>${title}</h3>
+                <p>${genre.join(", ")}</p>
                 <a href="movie-details.html">
                     <div>Details</div>
                 </a>
