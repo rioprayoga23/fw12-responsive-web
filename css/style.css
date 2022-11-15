@@ -499,14 +499,15 @@ header section {
 
 .wrap-now-showing {
   background: #f5f6f8;
-  padding-bottom: 90px;
   position: relative;
+  height: 560px;
 }
 
 .header-main {
   display: flex;
   padding: 32px 79px;
   align-items: center;
+  margin-top: 29px;
 }
 
 .title-header-main {
@@ -592,6 +593,10 @@ header section {
   overflow-y: hidden;
   padding-bottom: 20px;
   padding-top: 24px;
+}
+
+.container-list-movie::-webkit-scrollbar {
+  display: none;
 }
 
 .container-list-movie .card-movies {
