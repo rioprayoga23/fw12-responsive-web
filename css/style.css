@@ -644,6 +644,20 @@ header section {
   text-overflow: ellipsis;
 }
 
+.msg-notFound {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #a0a3bd;
+  margin: 0 auto;
+}
+
 .container-list-movie .card-movies p {
   font-family: "Open Sans";
   font-style: normal;

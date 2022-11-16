@@ -145,31 +145,35 @@ if (window.location.pathname === "/sign-in.html") {
 
   //! fetching data dari api
   const getMovie = async () => {
-    const req = await fetch(
-      "https://www.omdbapi.com/?apikey=1e23b4b9&s=marvel"
-    );
-    const res = await req.json();
+    try {
+      const req = await fetch(
+        "https://www.omdbapi.com/?apikey=1e23b4b9&s=harry potter"
+      );
+      const res = await req.json();
 
-    //!destruct properti Search
-    const { Search } = res;
+      //!destruct properti Search
+      const { Search } = res;
+      //!Maping data
+      const template = Search.map((data) => {
+        const { Title, Poster, Year } = data;
 
-    //!Maping data
-    const template = Search.map((data) => {
-      const { Title, Poster, Year } = data;
+        return `<div class="card-movies">
+                  <img src="${Poster}" alt="">
+                      <div class="wrap-title">
+                      ${Title}
+                      </div>
+                      <p>${Year}</p>
+                      <a href="movie-details.html">
+                          <div>Details</div>
+                      </a>
+              </div>`;
+      });
 
-      return `<div class="card-movies">
-             <img src="${Poster}" alt="">
-                 <div class="wrap-title">
-                 ${Title}
-                 </div>
-                 <p>${Year}</p>
-                 <a href="movie-details.html">
-                     <div>Details</div>
-                 </a>
-         </div>`;
-    });
-
-    containerListUpcoming.innerHTML = template.join("");
+      containerListUpcoming.innerHTML = template.join("");
+    } catch (error) {
+      const msgError = `<div class="msg-notFound">Movies Not Found</div>`;
+      containerListUpcoming.innerHTML = msgError;
+    }
   };
 
   getMovie();
