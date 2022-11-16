@@ -3278,6 +3278,8 @@ form > div:nth-child(3) > div:nth-child(2) {
   }
   .card-button-logout button {
     width: 100%;
+    padding: 7px 0;
+    font-size: 14px;
   }
   .card-setting-profile {
     flex-direction: column;
