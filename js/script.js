@@ -31,10 +31,13 @@ if (window.location.pathname === "/sign-in.html") {
       }, 5000);
     }
   });
+
+  //! tutup alert ketika di clik btn close
   btnClose.addEventListener("click", () => {
     alertInvalid.style.display = "none";
   });
 
+  //! ketika btn eye-password di klik
   btnEye.addEventListener("click", (event) => {
     //! cek type dari input
     if (inputPass.getAttribute("type") == "password") {
@@ -103,6 +106,7 @@ if (window.location.pathname === "/sign-in.html") {
       img: "./assets/jhon.png",
     },
   ];
+
   const containerList = document.getElementById("container-list-movie");
   const containerListUpcoming = document.getElementById(
     "container-list-upcoming"
@@ -139,6 +143,7 @@ if (window.location.pathname === "/sign-in.html") {
   //       </div>`;
   // });
 
+  //! fetching data dari api
   const getMovie = async () => {
     const req = await fetch(
       "https://www.omdbapi.com/?apikey=1e23b4b9&s=marvel"
